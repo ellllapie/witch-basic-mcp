@@ -1,0 +1,227 @@
+{
+  "Basil": {
+    "scientificName": "Ocimum basilicum",
+    "commonNames": ["Sweet Basil", "St. Joseph's Wort", "Witches Herb"],
+    "gender": "Masculine",
+    "planet": "Mars",
+    "element": "Fire",
+    "deities": ["Vishnu", "Erzulie", "Krishna"],
+    "powers": ["Love", "Exorcism", "Wealth", "Flying", "Protection"]
+  },
+  "Rosemary": {
+    "scientificName": "Rosmarinus officinalis",
+    "commonNames": ["Dew of the Sea", "Sea Dew", "Elf Leaf"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": ["Virgin Mary"],
+    "powers": ["Protection", "Love", "Lust", "Mental Powers", "Exorcism", "Purification", "Healing", "Sleep", "Youth"]
+  },
+  "Lavender": {
+    "scientificName": "Lavandula officinale",
+    "commonNames": ["Elf Leaf", "Nard", "Spike"],
+    "gender": "Masculine",
+    "planet": "Mercury",
+    "element": "Air",
+    "deities": ["Hecate", "Saturn"],
+    "powers": ["Love", "Protection", "Sleep", "Chastity", "Longevity", "Purification", "Happiness", "Peace"]
+  },
+  "Sage": {
+    "scientificName": "Salvia officinalis",
+    "commonNames": ["Garden Sage"],
+    "gender": "Masculine",
+    "planet": "Jupiter",
+    "element": "Air",
+    "deities": ["Zeus", "Jupiter"],
+    "powers": ["Immortality", "Longevity", "Wisdom", "Protection", "Wishes"]
+  },
+  "Rose": {
+    "scientificName": "Rosa spp.",
+    "commonNames": [],
+    "gender": "Feminine",
+    "planet": "Venus",
+    "element": "Water",
+    "deities": ["Aphrodite", "Adonis", "Venus", "Cupid", "Demeter", "Isis", "Eros", "Hulda"],
+    "powers": ["Love", "Psychic Powers", "Healing", "Love Divination", "Luck", "Protection"]
+  },
+  "Cinnamon": {
+    "scientificName": "Cinnamomum zeylanicum",
+    "commonNames": ["Sweet Wood"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": ["Aphrodite", "Venus"],
+    "powers": ["Spirituality", "Success", "Healing", "Power", "Psychic Powers", "Lust", "Protection", "Love"]
+  },
+  "Mint": {
+    "scientificName": "Mentha spp.",
+    "commonNames": ["Peppermint", "Spearmint"],
+    "gender": "Masculine",
+    "planet": "Mercury",
+    "element": "Air",
+    "deities": ["Pluto", "Hecate"],
+    "powers": ["Money", "Lust", "Healing", "Travel", "Exorcism", "Protection"]
+  },
+  "Bay": {
+    "scientificName": "Laurus nobilis",
+    "commonNames": ["Bay Laurel", "Sweet Bay", "Laurel"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": ["Aesculapius", "Apollo", "Ceres", "Faunus", "Eros"],
+    "powers": ["Protection", "Psychic Powers", "Healing", "Purification", "Strength"]
+  },
+  "Chamomile": {
+    "scientificName": "Anthemis nobilis",
+    "commonNames": ["Roman Chamomile", "Ground Apple", "Whig Plant"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Water",
+    "deities": ["Ra", "Cernunnos", "Lugh"],
+    "powers": ["Money", "Sleep", "Love", "Purification"]
+  },
+  "Mugwort": {
+    "scientificName": "Artemisia vulgaris",
+    "commonNames": ["Artemisia", "Felon Herb", "Sailor's Tobacco"],
+    "gender": "Feminine",
+    "planet": "Venus",
+    "element": "Earth",
+    "deities": ["Artemis", "Diana"],
+    "powers": ["Strength", "Psychic Powers", "Protection", "Prophetic Dreams", "Healing", "Astral Projection"]
+  },
+  "Thyme": {
+    "scientificName": "Thymus vulgaris",
+    "commonNames": ["Garden Thyme"],
+    "gender": "Feminine",
+    "planet": "Venus",
+    "element": "Water",
+    "deities": [],
+    "powers": ["Health", "Healing", "Sleep", "Psychic Powers", "Love", "Purification", "Courage"]
+  },
+  "Yarrow": {
+    "scientificName": "Achillea millefolium",
+    "commonNames": ["Seven Year's Love", "Nosebleed", "Soldier's Woundwort"],
+    "gender": "Feminine",
+    "planet": "Venus",
+    "element": "Water",
+    "deities": [],
+    "powers": ["Courage", "Love", "Psychic Powers", "Exorcism"]
+  },
+  "Frankincense": {
+    "scientificName": "Boswellia carterii",
+    "commonNames": ["Olibanum"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": ["Ra", "Baal"],
+    "powers": ["Protection", "Exorcism", "Spirituality"]
+  },
+  "Myrrh": {
+    "scientificName": "Commiphora myrrha",
+    "commonNames": [],
+    "gender": "Feminine",
+    "planet": "Moon",
+    "element": "Water",
+    "deities": ["Isis", "Adonis", "Ra"],
+    "powers": ["Protection", "Exorcism", "Healing", "Spirituality"]
+  },
+  "Sandalwood": {
+    "scientificName": "Santalum album",
+    "commonNames": ["White Sandalwood"],
+    "gender": "Feminine",
+    "planet": "Moon",
+    "element": "Water",
+    "deities": [],
+    "powers": ["Protection", "Wishes", "Healing", "Exorcism", "Spirituality"]
+  },
+  "Cedar": {
+    "scientificName": "Cedrus libani",
+    "commonNames": ["Tree of Life", "Arbor Vitae"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": [],
+    "powers": ["Healing", "Purification", "Money", "Protection"]
+  },
+  "Jasmine": {
+    "scientificName": "Jasminum officinale",
+    "commonNames": ["Moonlight on the Grove"],
+    "gender": "Feminine",
+    "planet": "Moon",
+    "element": "Water",
+    "deities": ["Vishnu"],
+    "powers": ["Love", "Money", "Prophetic Dreams"]
+  },
+  "Patchouli": {
+    "scientificName": "Pogostemon cablin",
+    "commonNames": ["Pucha-pot"],
+    "gender": "Feminine",
+    "planet": "Saturn",
+    "element": "Earth",
+    "deities": [],
+    "powers": ["Money", "Fertility", "Lust"]
+  },
+  "Vervain": {
+    "scientificName": "Verbena officinalis",
+    "commonNames": ["Verbena", "Enchanter's Plant", "Herb of Grace", "Juno's Tears"],
+    "gender": "Feminine",
+    "planet": "Venus",
+    "element": "Earth",
+    "deities": ["Kerridwen", "Mars", "Venus", "Aradia", "Isis", "Jupiter", "Thor", "Juno"],
+    "powers": ["Love", "Protection", "Purification", "Peace", "Money", "Youth", "Chastity", "Sleep", "Healing"]
+  },
+  "Wormwood": {
+    "scientificName": "Artemisia absinthium",
+    "commonNames": ["Absinthe", "Old Woman"],
+    "gender": "Masculine",
+    "planet": "Mars",
+    "element": "Fire",
+    "deities": ["Iris", "Osiris", "Diana", "Artemis"],
+    "powers": ["Psychic Powers", "Protection", "Love", "Calling Spirits"]
+  },
+  "Rue": {
+    "scientificName": "Ruta graveolens",
+    "commonNames": ["Herb of Grace", "Garden Rue"],
+    "gender": "Masculine",
+    "planet": "Mars",
+    "element": "Fire",
+    "deities": ["Diana", "Aradia"],
+    "powers": ["Healing", "Health", "Mental Powers", "Exorcism", "Love"]
+  },
+  "Angelica": {
+    "scientificName": "Angelica archangelica",
+    "commonNames": ["Archangel", "Masterwort"],
+    "gender": "Masculine",
+    "planet": "Sun",
+    "element": "Fire",
+    "deities": [],
+    "powers": ["Exorcism", "Protection", "Healing", "Visions"]
+  },
+  "Garlic": {
+    "scientificName": "Allium sativum",
+    "commonNames": ["Poor Man's Treacle"],
+    "gender": "Masculine",
+    "planet": "Mars",
+    "element": "Fire",
+    "deities": ["Hecate"],
+    "powers": ["Protection", "Healing", "Exorcism", "Lust", "Anti-Theft"]
+  },
+  "Ginger": {
+    "scientificName": "Zingiber officinale",
+    "commonNames": [],
+    "gender": "Masculine",
+    "planet": "Mars",
+    "element": "Fire",
+    "deities": [],
+    "powers": ["Love", "Money", "Success", "Power"]
+  },
+  "Clove": {
+    "scientificName": "Caryophyllus aromaticus",
+    "commonNames": [],
+    "gender": "Masculine",
+    "planet": "Jupiter",
+    "element": "Fire",
+    "deities": [],
+    "powers": ["Protection", "Exorcism", "Love", "Money"]
+  }
+}
