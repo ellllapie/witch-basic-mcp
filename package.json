@@ -1,0 +1,17 @@
+{
+  "name": "witch-basic-mcp",
+  "version": "0.1.0",
+  "description": "Witch's Basic Tools — MCP server for herbal, crystal, color, moon phase, sabbat, and intent correspondences",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "setup": "node scripts/fetch-data.js",
+    "prestart": "node scripts/fetch-data.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

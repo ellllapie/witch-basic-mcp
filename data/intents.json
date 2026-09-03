@@ -1,0 +1,164 @@
+{
+  "protection": {
+    "herbs": ["Rosemary", "Sage", "Basil", "Dragon's Blood", "Nettle", "Bay Laurel", "Rue", "Angelica", "Black Pepper", "Cedar"],
+    "crystals": ["Black Tourmaline", "Obsidian", "Smoky Quartz", "Amethyst", "Hematite", "Tiger's Eye", "Onyx"],
+    "colors": ["Black", "White", "Red"],
+    "element": "Fire",
+    "bestDay": "Tuesday",
+    "bestMoonPhase": "Full Moon",
+    "candle": "Black — absorbs and banishes negativity"
+  },
+  "love": {
+    "herbs": ["Rose", "Jasmine", "Lavender", "Yarrow", "Hibiscus", "Vanilla", "Damiana", "Apple", "Cinnamon"],
+    "crystals": ["Rose Quartz", "Rhodonite", "Emerald", "Moonstone", "Jade", "Garnet"],
+    "colors": ["Pink", "Red", "Green"],
+    "element": "Water",
+    "bestDay": "Friday",
+    "bestMoonPhase": "Waxing Crescent to Full Moon",
+    "candle": "Pink — gentle romantic love; Red — passionate desire"
+  },
+  "prosperity": {
+    "herbs": ["Basil", "Cinnamon", "Mint", "Clove", "Chamomile", "Ginger", "Bay Laurel", "Nutmeg", "Alfalfa"],
+    "crystals": ["Citrine", "Jade", "Aventurine", "Pyrite", "Tiger's Eye", "Malachite"],
+    "colors": ["Green", "Gold"],
+    "element": "Earth",
+    "bestDay": "Thursday",
+    "bestMoonPhase": "Waxing to Full Moon",
+    "candle": "Green — steady growth; Gold — fast money and success"
+  },
+  "healing": {
+    "herbs": ["Chamomile", "Lavender", "Eucalyptus", "Lemon Balm", "Rosemary", "Calendula", "Peppermint", "Thyme"],
+    "crystals": ["Amethyst", "Clear Quartz", "Turquoise", "Aventurine", "Fluorite", "Bloodstone"],
+    "colors": ["Blue", "Green", "White"],
+    "element": "Water",
+    "bestDay": "Sunday",
+    "bestMoonPhase": "Full Moon",
+    "candle": "Blue — physical healing; White — all-purpose healing"
+  },
+  "purification": {
+    "herbs": ["White Sage", "Cedar", "Frankincense", "Hyssop", "Lavender", "Lemon", "Rosemary", "Salt (not an herb but essential)"],
+    "crystals": ["Selenite", "Clear Quartz", "Black Tourmaline", "Amethyst"],
+    "colors": ["White", "Light Blue"],
+    "element": "Fire",
+    "bestDay": "Saturday",
+    "bestMoonPhase": "Waning Moon",
+    "candle": "White — universal purification"
+  },
+  "divination": {
+    "herbs": ["Mugwort", "Wormwood", "Star Anise", "Yarrow", "Bay Laurel", "Dandelion", "Eyebright"],
+    "crystals": ["Amethyst", "Labradorite", "Moonstone", "Lapis Lazuli", "Fluorite", "Obsidian"],
+    "colors": ["Purple", "Silver", "Indigo"],
+    "element": "Water",
+    "bestDay": "Monday",
+    "bestMoonPhase": "Full Moon or New Moon",
+    "candle": "Purple — psychic power; Silver — lunar and intuitive work"
+  },
+  "courage": {
+    "herbs": ["Borage", "Nettle", "Thistle", "Ginger", "Dragon's Blood", "Black Pepper"],
+    "crystals": ["Carnelian", "Red Jasper", "Garnet", "Tiger's Eye", "Bloodstone"],
+    "colors": ["Red", "Orange"],
+    "element": "Fire",
+    "bestDay": "Tuesday",
+    "bestMoonPhase": "Waxing Moon",
+    "candle": "Red — raw courage; Orange — sustained confidence"
+  },
+  "peace": {
+    "herbs": ["Lavender", "Chamomile", "Passionflower", "Valerian", "Lemon Balm", "Skullcap"],
+    "crystals": ["Amethyst", "Blue Lace Agate", "Lepidolite", "Celestite", "Aquamarine"],
+    "colors": ["Blue", "White", "Lavender"],
+    "element": "Water",
+    "bestDay": "Monday",
+    "bestMoonPhase": "Waning Moon",
+    "candle": "Light blue — serenity; White — all-purpose peace"
+  },
+  "creativity": {
+    "herbs": ["Orange Peel", "Cinnamon", "Vanilla", "Lemongrass", "Ginger", "Rosemary"],
+    "crystals": ["Carnelian", "Citrine", "Sunstone", "Orange Calcite", "Fire Opal"],
+    "colors": ["Orange", "Yellow"],
+    "element": "Fire",
+    "bestDay": "Wednesday",
+    "bestMoonPhase": "Waxing Moon",
+    "candle": "Orange — creative spark; Yellow — intellectual inspiration"
+  },
+  "luck": {
+    "herbs": ["Clover", "Allspice", "Chamomile", "Nutmeg", "Star Anise", "Cinnamon", "Mint"],
+    "crystals": ["Aventurine", "Jade", "Citrine", "Tiger's Eye", "Malachite"],
+    "colors": ["Green", "Gold", "Orange"],
+    "element": "Earth",
+    "bestDay": "Thursday",
+    "bestMoonPhase": "Waxing to Full Moon",
+    "candle": "Green — luck and opportunity"
+  },
+  "banishing": {
+    "herbs": ["Sage", "Cedar", "Garlic", "Black Pepper", "Rue", "Frankincense", "Clove", "Wormwood"],
+    "crystals": ["Black Tourmaline", "Obsidian", "Smoky Quartz", "Onyx", "Jet"],
+    "colors": ["Black"],
+    "element": "Fire",
+    "bestDay": "Saturday",
+    "bestMoonPhase": "Waning Moon to Dark Moon",
+    "candle": "Black — absorb and destroy negative energy"
+  },
+  "wisdom": {
+    "herbs": ["Sage", "Rosemary", "Eyebright", "Solomon's Seal", "Bay Laurel"],
+    "crystals": ["Lapis Lazuli", "Sodalite", "Amethyst", "Fluorite", "Sapphire"],
+    "colors": ["Blue", "Purple", "Indigo"],
+    "element": "Air",
+    "bestDay": "Wednesday",
+    "bestMoonPhase": "Full Moon",
+    "candle": "Blue — wisdom and truth; Purple — deep spiritual insight"
+  },
+  "grounding": {
+    "herbs": ["Patchouli", "Vetiver", "Cedar", "Oak", "Valerian"],
+    "crystals": ["Hematite", "Smoky Quartz", "Black Tourmaline", "Red Jasper", "Moss Agate"],
+    "colors": ["Brown", "Black", "Dark Green"],
+    "element": "Earth",
+    "bestDay": "Saturday",
+    "bestMoonPhase": "Any — grounding is always appropriate",
+    "candle": "Brown — stability and earth connection; Black — grounding and absorption"
+  },
+  "beauty": {
+    "herbs": ["Rose", "Jasmine", "Violet", "Chamomile", "Hibiscus", "Elderflower"],
+    "crystals": ["Rose Quartz", "Moonstone", "Opal", "Rhodonite"],
+    "colors": ["Pink", "Copper"],
+    "element": "Water",
+    "bestDay": "Friday",
+    "bestMoonPhase": "Full Moon",
+    "candle": "Pink — self-love and beauty"
+  },
+  "success": {
+    "herbs": ["Cinnamon", "Bay Laurel", "Basil", "Ginger", "High John the Conqueror"],
+    "crystals": ["Citrine", "Pyrite", "Sunstone", "Tiger's Eye", "Carnelian"],
+    "colors": ["Gold", "Orange", "Yellow"],
+    "element": "Fire",
+    "bestDay": "Sunday",
+    "bestMoonPhase": "Waxing to Full Moon",
+    "candle": "Gold — achievement and recognition"
+  },
+  "sleep": {
+    "herbs": ["Lavender", "Chamomile", "Valerian", "Mugwort", "Passionflower", "Poppy"],
+    "crystals": ["Amethyst", "Lepidolite", "Howlite", "Moonstone"],
+    "colors": ["Blue", "Silver", "Lavender"],
+    "element": "Water",
+    "bestDay": "Monday",
+    "bestMoonPhase": "Waning Moon",
+    "candle": "Lavender — restful sleep; Silver — dreamwork"
+  },
+  "fertility": {
+    "herbs": ["Hawthorn", "Mistletoe", "Mugwort", "Raspberry Leaf", "Poppy", "Rose"],
+    "crystals": ["Moonstone", "Rose Quartz", "Carnelian", "Unakite", "Jade"],
+    "colors": ["Green", "Pink", "White"],
+    "element": "Earth",
+    "bestDay": "Friday",
+    "bestMoonPhase": "Full Moon",
+    "candle": "Green — growth and fertility"
+  },
+  "communication": {
+    "herbs": ["Lavender", "Mint", "Lemongrass", "Fennel", "Blue Vervain"],
+    "crystals": ["Blue Lace Agate", "Sodalite", "Aquamarine", "Turquoise", "Lapis Lazuli"],
+    "colors": ["Blue", "Yellow"],
+    "element": "Air",
+    "bestDay": "Wednesday",
+    "bestMoonPhase": "Waxing Moon",
+    "candle": "Blue — truth and eloquence; Yellow — clarity of thought"
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "day": "Monday",
+    "planet": "Moon",
+    "symbol": "☽",
+    "energy": "Intuition, emotions, dreams, the subconscious, fertility, the home",
+    "magick": ["Divination", "Dreamwork", "Psychic development", "Fertility", "Emotional healing", "Home blessings"],
+    "colors": ["White", "Silver", "Light Blue"],
+    "herbs": ["Jasmine", "Moonflower", "Willow", "Mugwort", "Camphor"],
+    "crystals": ["Moonstone", "Selenite", "Pearl", "Opal"],
+    "metal": "Silver",
+    "element": "Water"
+  },
+  {
+    "day": "Tuesday",
+    "planet": "Mars",
+    "symbol": "♂",
+    "energy": "Courage, strength, conflict, passion, protection, competition",
+    "magick": ["Protection", "Courage spells", "Banishing", "Physical strength", "Victory", "Lust"],
+    "colors": ["Red", "Orange", "Black"],
+    "herbs": ["Dragon's Blood", "Nettle", "Ginger", "Pepper", "Thistle"],
+    "crystals": ["Red Jasper", "Garnet", "Bloodstone", "Ruby"],
+    "metal": "Iron",
+    "element": "Fire"
+  },
+  {
+    "day": "Wednesday",
+    "planet": "Mercury",
+    "symbol": "☿",
+    "energy": "Communication, intellect, travel, commerce, trickery, adaptability",
+    "magick": ["Communication spells", "Study and learning", "Travel safety", "Business success", "Divination", "Writing"],
+    "colors": ["Yellow", "Orange", "Purple"],
+    "herbs": ["Lavender", "Fern", "Marjoram", "Dill", "Lemongrass"],
+    "crystals": ["Agate", "Citrine", "Fluorite", "Aventurine"],
+    "metal": "Mercury / Zinc",
+    "element": "Air"
+  },
+  {
+    "day": "Thursday",
+    "planet": "Jupiter",
+    "symbol": "♃",
+    "energy": "Expansion, abundance, luck, generosity, legal matters, leadership",
+    "magick": ["Prosperity", "Luck", "Legal matters", "Growth", "Generosity", "Leadership"],
+    "colors": ["Blue", "Purple", "Green"],
+    "herbs": ["Sage", "Nutmeg", "Clove", "Cedar", "Hyssop"],
+    "crystals": ["Lapis Lazuli", "Amethyst", "Turquoise", "Sodalite"],
+    "metal": "Tin",
+    "element": "Fire"
+  },
+  {
+    "day": "Friday",
+    "planet": "Venus",
+    "symbol": "♀",
+    "energy": "Love, beauty, pleasure, harmony, art, relationships, self-care",
+    "magick": ["Love spells", "Beauty rituals", "Friendship", "Harmony", "Art and music", "Self-love", "Reconciliation"],
+    "colors": ["Pink", "Green", "Copper"],
+    "herbs": ["Rose", "Yarrow", "Thyme", "Violet", "Apple", "Vanilla"],
+    "crystals": ["Rose Quartz", "Emerald", "Jade", "Rhodonite"],
+    "metal": "Copper",
+    "element": "Earth"
+  },
+  {
+    "day": "Saturday",
+    "planet": "Saturn",
+    "symbol": "♄",
+    "energy": "Discipline, boundaries, protection, banishing, endings, karma",
+    "magick": ["Banishing", "Protection", "Binding", "Breaking bad habits", "Boundaries", "Karma work", "Ancestor work"],
+    "colors": ["Black", "Dark Purple", "Dark Brown"],
+    "herbs": ["Comfrey", "Mullein", "Cypress", "Patchouli", "Solomon's Seal"],
+    "crystals": ["Obsidian", "Onyx", "Jet", "Hematite"],
+    "metal": "Lead",
+    "element": "Earth"
+  },
+  {
+    "day": "Sunday",
+    "planet": "Sun",
+    "symbol": "☉",
+    "energy": "Vitality, success, confidence, health, joy, personal power",
+    "magick": ["Success", "Healing", "Confidence", "Personal power", "Joy", "Vitality", "Fame"],
+    "colors": ["Gold", "Yellow", "Orange"],
+    "herbs": ["Sunflower", "Chamomile", "Cinnamon", "Frankincense", "St. John's Wort"],
+    "crystals": ["Citrine", "Sunstone", "Amber", "Tiger's Eye"],
+    "metal": "Gold",
+    "element": "Fire"
+  }
+]

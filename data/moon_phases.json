@@ -1,0 +1,82 @@
+[
+  {
+    "phase": "New Moon",
+    "emoji": "🌑",
+    "energy": "Beginnings, setting intentions, planting seeds",
+    "magick": ["New ventures", "Setting goals", "Self-reflection", "Divination for the month ahead", "Shadow work"],
+    "herbs": ["Mugwort", "Jasmine", "Lavender", "Sandalwood"],
+    "crystals": ["Obsidian", "Black Tourmaline", "Labradorite", "Moonstone"],
+    "element": "Earth",
+    "deities": ["Hecate", "Nyx", "Kali"]
+  },
+  {
+    "phase": "Waxing Crescent",
+    "emoji": "🌒",
+    "energy": "Momentum, courage, moving forward",
+    "magick": ["Attraction spells", "Courage work", "Building motivation", "Activating plans"],
+    "herbs": ["Basil", "Cinnamon", "Ginger", "Rosemary"],
+    "crystals": ["Citrine", "Carnelian", "Tiger's Eye"],
+    "element": "Fire",
+    "deities": ["Artemis", "Brigid"]
+  },
+  {
+    "phase": "First Quarter",
+    "emoji": "🌓",
+    "energy": "Action, decisions, overcoming obstacles",
+    "magick": ["Strength spells", "Decision-making", "Overcoming blocks", "Protection work"],
+    "herbs": ["Bay Laurel", "Nettle", "Thistle", "Dragon's Blood"],
+    "crystals": ["Red Jasper", "Garnet", "Bloodstone"],
+    "element": "Fire",
+    "deities": ["Athena", "Mars"]
+  },
+  {
+    "phase": "Waxing Gibbous",
+    "emoji": "🌔",
+    "energy": "Refinement, patience, trust the process",
+    "magick": ["Refining intentions", "Gratitude rituals", "Patience work", "Adjusting spells"],
+    "herbs": ["Chamomile", "Vervain", "Lemon Balm"],
+    "crystals": ["Amethyst", "Fluorite", "Clear Quartz"],
+    "element": "Water",
+    "deities": ["Isis", "Selene"]
+  },
+  {
+    "phase": "Full Moon",
+    "emoji": "🌕",
+    "energy": "Peak power, manifestation, illumination, completion",
+    "magick": ["Charging tools and crystals", "Manifestation", "Divination", "Healing", "Fertility", "Any high-power work"],
+    "herbs": ["Mugwort", "White Sage", "Jasmine", "Lotus", "Moonflower"],
+    "crystals": ["Moonstone", "Selenite", "Clear Quartz", "Opal"],
+    "element": "Water",
+    "deities": ["Selene", "Luna", "Diana", "Cerridwen"]
+  },
+  {
+    "phase": "Waning Gibbous",
+    "emoji": "🌖",
+    "energy": "Gratitude, sharing, introspection",
+    "magick": ["Gratitude rituals", "Sharing wisdom", "Teaching", "Banishing bad habits"],
+    "herbs": ["Sage", "Thyme", "Eucalyptus"],
+    "crystals": ["Lapis Lazuli", "Sodalite", "Iolite"],
+    "element": "Air",
+    "deities": ["Demeter", "Sophia"]
+  },
+  {
+    "phase": "Last Quarter",
+    "emoji": "🌗",
+    "energy": "Release, forgiveness, letting go",
+    "magick": ["Banishing", "Breaking hexes", "Releasing attachments", "Cord-cutting", "Forgiveness work"],
+    "herbs": ["Cedar", "Frankincense", "Hyssop", "Rue"],
+    "crystals": ["Smoky Quartz", "Apache Tear", "Black Onyx"],
+    "element": "Earth",
+    "deities": ["Hecate", "Morrigan"]
+  },
+  {
+    "phase": "Waning Crescent",
+    "emoji": "🌘",
+    "energy": "Rest, surrender, preparation for renewal",
+    "magick": ["Rest and recovery", "Meditation", "Dreamwork", "Ancestor communication", "Preparing for the new cycle"],
+    "herbs": ["Valerian", "Poppy", "Passionflower", "Mugwort"],
+    "crystals": ["Amethyst", "Lepidolite", "Black Moonstone"],
+    "element": "Water",
+    "deities": ["Hecate", "Persephone"]
+  }
+]
