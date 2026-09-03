@@ -1,0 +1,98 @@
+{
+  "Mercury": {
+    "symbol": "☿",
+    "directEnergy": "Communication, travel, commerce, technology, thinking",
+    "retrogradeEnergy": "Miscommunication, delays, tech glitches, revisiting the past",
+    "frequency": "3–4 times per year, about 3 weeks each",
+    "goodFor": ["Reviewing old plans and projects", "Reconnecting with people from the past", "Editing and revising (not starting)", "Backing up data", "Reflection and journaling", "Divination about past situations", "Cord-cutting with old communication patterns"],
+    "avoid": ["Signing contracts", "Launching new projects", "Buying electronics", "Important travel without backup plans", "Making assumptions about what someone meant"],
+    "herbs": ["Lavender", "Mint", "Lemongrass", "Rosemary"],
+    "crystals": ["Fluorite", "Blue Lace Agate", "Amazonite", "Smoky Quartz"],
+    "candle": "Yellow — clarity through confusion",
+    "witchTip": "Triple-check messages before sending. Mercury retrograde is not cursed — it's a built-in editing phase. Use it."
+  },
+  "Venus": {
+    "symbol": "♀",
+    "directEnergy": "Love, beauty, pleasure, money, harmony, relationships",
+    "retrogradeEnergy": "Re-evaluating relationships, old flames resurface, beauty/money disruptions",
+    "frequency": "Every 18 months, about 6 weeks",
+    "goodFor": ["Reviewing what you truly value", "Reconnecting with self-worth", "Revisiting old relationship patterns", "Self-love rituals", "Beauty shadow work", "Financial review and budgeting magic"],
+    "avoid": ["Starting new relationships", "Major beauty changes (haircuts, cosmetic procedures)", "Large purchases", "Wedding planning", "New love spells (revisit old ones instead)"],
+    "herbs": ["Rose", "Yarrow", "Hibiscus", "Vanilla", "Apple"],
+    "crystals": ["Rose Quartz", "Rhodonite", "Green Aventurine", "Kunzite"],
+    "candle": "Pink — gentle self-love; Green — reassessing value",
+    "witchTip": "Exes may reappear. This is not a sign to reunite — it's a chance to see how much you've grown. Also a great time to declutter your closet and your heart."
+  },
+  "Mars": {
+    "symbol": "♂",
+    "directEnergy": "Action, drive, aggression, sexuality, willpower",
+    "retrogradeEnergy": "Frustration, stalled projects, redirected anger, low physical energy",
+    "frequency": "Every 2 years, about 2.5 months",
+    "goodFor": ["Reviewing how you handle anger", "Rethinking strategies", "Internal strength building", "Shadow work around aggression", "Passive protection magic", "Cooling-down spells"],
+    "avoid": ["Starting fights or confrontations", "Launching aggressive campaigns", "Surgery if avoidable", "Overexertion", "Impulsive action"],
+    "herbs": ["Chamomile", "Lavender", "Valerian", "Passionflower"],
+    "crystals": ["Amethyst", "Black Tourmaline", "Hematite", "Lepidolite"],
+    "candle": "Blue — cooling anger; Black — absorbing frustrated energy",
+    "witchTip": "Your engine is idling, not dead. Redirect anger into creative work. This is rest, not failure."
+  },
+  "Jupiter": {
+    "symbol": "♃",
+    "directEnergy": "Expansion, luck, abundance, growth, optimism, higher learning",
+    "retrogradeEnergy": "Internal growth, re-evaluating beliefs, spiritual deepening",
+    "frequency": "Once a year, about 4 months",
+    "goodFor": ["Spiritual study and reflection", "Gratitude rituals", "Re-evaluating your belief system", "Inner abundance work", "Philosophical journaling", "Wisdom-seeking divination"],
+    "avoid": ["Over-spending on growth opportunities", "Blind optimism", "Taking big risks expecting luck", "Legal gambles"],
+    "herbs": ["Sage", "Cedar", "Nutmeg", "Clove", "Hyssop"],
+    "crystals": ["Amethyst", "Lapis Lazuli", "Sodalite", "Turquoise"],
+    "candle": "Purple — spiritual growth; Blue — inner wisdom",
+    "witchTip": "Luck turns inward. The growth happening now is invisible but real — like roots in winter."
+  },
+  "Saturn": {
+    "symbol": "♄",
+    "directEnergy": "Discipline, structure, karma, responsibility, boundaries, time",
+    "retrogradeEnergy": "Karmic review, loosening restrictions, re-examining commitments",
+    "frequency": "Once a year, about 4.5 months",
+    "goodFor": ["Karmic clearing and ancestor work", "Releasing outdated obligations", "Reviewing boundaries — too rigid or too loose?", "Restructuring habits", "Past-life work", "Forgiveness rituals", "Breaking patterns that no longer serve"],
+    "avoid": ["Creating new rigid structures", "Taking on heavy new responsibilities", "Starting long-term commitments", "Being too hard on yourself"],
+    "herbs": ["Comfrey", "Mullein", "Cypress", "Patchouli", "Solomon's Seal"],
+    "crystals": ["Obsidian", "Onyx", "Hematite", "Jet", "Smoky Quartz"],
+    "candle": "Black — karmic clearing; Dark purple — deep restructuring",
+    "witchTip": "Saturn retrograde loosens the chains you forgot you were wearing. Notice which rules you follow out of habit vs. choice."
+  },
+  "Uranus": {
+    "symbol": "♅",
+    "directEnergy": "Revolution, sudden change, innovation, freedom, awakening",
+    "retrogradeEnergy": "Internal revolution, reviewing where you need freedom, delayed breakthroughs",
+    "frequency": "Once a year, about 5 months",
+    "goodFor": ["Inner liberation work", "Reviewing where you feel trapped", "Meditation on freedom vs. stability", "Breaking internal patterns", "Tech and digital declutter"],
+    "avoid": ["Forcing external change", "Dramatic declarations of independence", "Expecting sudden breakthroughs"],
+    "herbs": ["Frankincense", "Star Anise", "Mugwort", "Dandelion"],
+    "crystals": ["Labradorite", "Aquamarine", "Clear Quartz", "Fluorite"],
+    "candle": "Electric blue or violet — inner awakening",
+    "witchTip": "The revolution is internal first. What do you actually want to be free from?"
+  },
+  "Neptune": {
+    "symbol": "♆",
+    "directEnergy": "Dreams, illusion, spirituality, compassion, the unconscious",
+    "retrogradeEnergy": "Clarity through disillusionment, seeing through deception, spiritual grounding",
+    "frequency": "Once a year, about 5.5 months",
+    "goodFor": ["Seeing through illusions", "Grounding spiritual practices", "Reality checks in relationships", "Sobriety and clarity work", "Discernment divination", "Dream journaling with critical eye"],
+    "avoid": ["Escapism", "Substance use in ritual", "Blind trust", "Starting new spiritual commitments without discernment"],
+    "herbs": ["Mugwort", "Lotus", "Jasmine", "Sandalwood", "Seaweed"],
+    "crystals": ["Amethyst", "Fluorite", "Black Tourmaline", "Selenite"],
+    "candle": "Sea green — clarity from the depths; White — truth",
+    "witchTip": "The fog lifts. What you see underneath might not be pretty, but it's real. Prefer real."
+  },
+  "Pluto": {
+    "symbol": "♇",
+    "directEnergy": "Transformation, power, death/rebirth, the shadow, the unconscious depths",
+    "retrogradeEnergy": "Deep internal transformation, power dynamics review, shadow integration",
+    "frequency": "Once a year, about 5–6 months",
+    "goodFor": ["Deep shadow work", "Power dynamics review", "Letting go of control", "Ancestral healing", "Psychotherapy-adjacent magic", "Composting what's dead", "Phoenix rituals"],
+    "avoid": ["Power grabs", "Manipulation magic", "Forcing transformation on others", "Obsessing"],
+    "herbs": ["Wormwood", "Dragon's Blood", "Cypress", "Myrrh", "Patchouli"],
+    "crystals": ["Obsidian", "Moldavite", "Malachite", "Smoky Quartz", "Black Tourmaline"],
+    "candle": "Black — death of the old; Deep red — rebirth from ashes",
+    "witchTip": "Pluto retrograde is composting season. What died this year? Let it rot. It's feeding something."
+  }
+}

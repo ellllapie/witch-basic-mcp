@@ -23,6 +23,8 @@ let sabbats = [];
 let planetaryDays = [];
 let elements = [];
 let intents = {};
+let moonInSigns = [];
+let retrogrades = {};
 
 try { herbs = loadJSON(join(VENDOR, 'botanicals.json')); } catch { console.warn('⚠ botanicals.json not found — run npm run setup'); }
 try { crystals = loadJSON(join(VENDOR, 'crystals.json')); } catch { console.warn('⚠ crystals.json not found — run npm run setup'); }
@@ -32,6 +34,8 @@ sabbats = loadJSON(join(DATA, 'sabbats.json'));
 planetaryDays = loadJSON(join(DATA, 'planetary_days.json'));
 elements = loadJSON(join(DATA, 'elements.json'));
 intents = loadJSON(join(DATA, 'intents.json'));
+moonInSigns = loadJSON(join(DATA, 'moon_in_signs.json'));
+retrogrades = loadJSON(join(DATA, 'retrogrades.json'));
 
 // ─── Helpers ─────────────────────────────────────────────
 
@@ -130,6 +134,33 @@ function formatIntent(name, data) {
   return lines.join('\n');
 }
 
+function formatMoonInSign(m) {
+  const lines = [`${m.symbol} Moon in ${m.sign}`];
+  lines.push(`  Element: ${m.element}`);
+  lines.push(`  Energy: ${m.energy}`);
+  lines.push(`  Good for: ${m.goodFor.join(', ')}`);
+  if (m.avoidOrBeCareful?.length) lines.push(`  Be careful with: ${m.avoidOrBeCareful.join(', ')}`);
+  lines.push(`  Herbs: ${m.herbs.join(', ')}`);
+  lines.push(`  Crystals: ${m.crystals.join(', ')}`);
+  lines.push(`  Body focus: ${m.bodyFocus}`);
+  lines.push(`  Mood: ${m.mood}`);
+  return lines.join('\n');
+}
+
+function formatRetrograde(planet, data) {
+  const lines = [`${data.symbol} ${planet} Retrograde`];
+  lines.push(`  Direct energy: ${data.directEnergy}`);
+  lines.push(`  Retrograde energy: ${data.retrogradeEnergy}`);
+  lines.push(`  Frequency: ${data.frequency}`);
+  lines.push(`  Good for: ${data.goodFor.join(', ')}`);
+  lines.push(`  Avoid: ${data.avoid.join(', ')}`);
+  lines.push(`  Herbs: ${data.herbs.join(', ')}`);
+  lines.push(`  Crystals: ${data.crystals.join(', ')}`);
+  lines.push(`  Candle: ${data.candle}`);
+  lines.push(`  🔮 ${data.witchTip}`);
+  return lines.join('\n');
+}
+
 // ─── Sabbat date helpers ─────────────────────────────────
 
 const SABBAT_APPROX_DATES = [
@@ -175,7 +206,7 @@ function getCurrentMoonPhase(date) {
 
 const server = new McpServer({
   name: 'witch-basic',
-  version: '0.1.0',
+  version: '0.2.0',
 });
 
 // 1. lookup_herb
@@ -224,11 +255,9 @@ server.tool(
   { intent: z.string().describe('Magical intent keyword') },
   async ({ intent }) => {
     const key = intent.toLowerCase().trim();
-    // exact match first
     if (intents[key]) {
       return { content: [{ type: 'text', text: formatIntent(key, intents[key]) }] };
     }
-    // fuzzy match
     const matches = Object.entries(intents).filter(([k]) => k.includes(key) || key.includes(k));
     if (matches.length) {
       return { content: [{ type: 'text', text: matches.map(([k, v]) => formatIntent(k, v)).join('\n\n') }] };
@@ -263,6 +292,8 @@ server.tool(
       `Aligned work: ${[...new Set([...day.magick.slice(0, 3), ...moon.magick.slice(0, 3)])].join(', ')}`,
       `Suggested herbs: ${[...new Set([...day.herbs.slice(0, 2), ...moon.herbs.slice(0, 2)])].join(', ')}`,
       `Suggested crystals: ${[...new Set([...day.crystals.slice(0, 2), ...moon.crystals.slice(0, 2)])].join(', ')}`,
+      '',
+      '💡 For precise moon sign and planetary positions, pair with astral_moon_phase / astral_current_transits.'
     ];
     return { content: [{ type: 'text', text: lines.join('\n') }] };
   }
@@ -315,6 +346,36 @@ server.tool(
       return { content: [{ type: 'text', text: `Element not found. Available: ${available}` }] };
     }
     return { content: [{ type: 'text', text: formatElement(result) }] };
+  }
+);
+
+// 9. moon_in_sign
+server.tool(
+  'moon_in_sign',
+  'Look up what magical work is aligned when the Moon is in a given zodiac sign. Get the sign from astral_moon_phase, then use this to know what to do with it. Covers all 12 signs.',
+  { sign: z.string().describe('Zodiac sign name (e.g. Pisces, Aries, Scorpio)') },
+  async ({ sign }) => {
+    const result = moonInSigns.find(m => fuzzyMatch(m.sign, sign));
+    if (!result) {
+      const available = moonInSigns.map(m => m.sign).join(', ');
+      return { content: [{ type: 'text', text: `Sign not found. Available: ${available}` }] };
+    }
+    return { content: [{ type: 'text', text: formatMoonInSign(result) }] };
+  }
+);
+
+// 10. planet_retrograde
+server.tool(
+  'planet_retrograde',
+  'Look up what a planet\'s retrograde means for magical practice — what to do, what to avoid, herbs, crystals, and witch tips. Get current retrograde status from astral_current_transits, then use this to interpret it. Covers Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.',
+  { planet: z.string().describe('Planet name (e.g. Mercury, Saturn, Venus)') },
+  async ({ planet }) => {
+    const key = Object.keys(retrogrades).find(k => fuzzyMatch(k, planet));
+    if (!key) {
+      const available = Object.keys(retrogrades).join(', ');
+      return { content: [{ type: 'text', text: `Planet not found. Available: ${available}` }] };
+    }
+    return { content: [{ type: 'text', text: formatRetrograde(key, retrogrades[key]) }] };
   }
 );
 
