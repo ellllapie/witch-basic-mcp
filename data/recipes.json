@@ -1,0 +1,76 @@
+[
+  {
+    "id": "888",
+    "name": "888聚财碗",
+    "nameEn": "888 Prosperity Bowl",
+    "type": "bowl",
+    "intent": ["prosperity", "money", "luck"],
+    "description": "八种招财草药组成的聚财碗，全部材料带招财或保护属性，火元素和木星系草药为主，适合扩张和吸引财富能量。",
+    "ingredients": [
+      {
+        "herb": "Star Anise",
+        "herbCn": "八角",
+        "powers": ["Money", "Luck", "Psychic Powers"],
+        "element": "Fire",
+        "planet": "Jupiter"
+      },
+      {
+        "herb": "Mint",
+        "herbCn": "薄荷",
+        "powers": ["Money", "Protection", "Healing"],
+        "element": "Air",
+        "planet": "Mercury"
+      },
+      {
+        "herb": "Cinnamon",
+        "herbCn": "桂皮",
+        "powers": ["Success", "Wealth", "Power", "Protection"],
+        "element": "Fire",
+        "planet": "Sun"
+      },
+      {
+        "herb": "White Sesame",
+        "herbCn": "白芝麻",
+        "powers": ["Money", "Opening Doors", "Revealing Hidden Things"],
+        "element": "Fire",
+        "planet": "Sun"
+      },
+      {
+        "herb": "Sage",
+        "herbCn": "鼠尾草",
+        "powers": ["Wisdom", "Wishes", "Protection", "Longevity"],
+        "element": "Air",
+        "planet": "Jupiter"
+      },
+      {
+        "herb": "Basil",
+        "herbCn": "罗勒",
+        "powers": ["Wealth", "Protection", "Love"],
+        "element": "Fire",
+        "planet": "Mars"
+      },
+      {
+        "herb": "Bay Leaf",
+        "herbCn": "月桂叶",
+        "powers": ["Success", "Strength", "Purification", "Protection"],
+        "element": "Fire",
+        "planet": "Sun"
+      },
+      {
+        "herb": "Clove",
+        "herbCn": "丁香",
+        "powers": ["Money", "Protection", "Exorcism"],
+        "element": "Fire",
+        "planet": "Jupiter"
+      }
+    ],
+    "timing": {
+      "bestDay": "Sunday",
+      "bestMoonPhase": "Waxing Gibbous",
+      "notes": "太阳日主成功和财富；盈凸月适合吸引和积累"
+    },
+    "instructions": "",
+    "source": "Ella原创配方",
+    "tags": ["beginner-friendly", "kitchen-witch", "prosperity"]
+  }
+]
