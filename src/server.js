@@ -25,6 +25,7 @@ let elements = [];
 let intents = {};
 let moonInSigns = [];
 let retrogrades = {};
+let recipes = [];
 
 try { herbs = loadJSON(join(VENDOR, 'botanicals.json')); } catch { console.warn('⚠ botanicals.json not found — run npm run setup'); }
 try { crystals = loadJSON(join(VENDOR, 'crystals.json')); } catch { console.warn('⚠ crystals.json not found — run npm run setup'); }
@@ -36,6 +37,7 @@ elements = loadJSON(join(DATA, 'elements.json'));
 intents = loadJSON(join(DATA, 'intents.json'));
 moonInSigns = loadJSON(join(DATA, 'moon_in_signs.json'));
 retrogrades = loadJSON(join(DATA, 'retrogrades.json'));
+try { recipes = loadJSON(join(DATA, 'recipes.json')); } catch { console.warn('⚠ recipes.json not found — no recipes loaded'); }
 
 // ─── Helpers ─────────────────────────────────────────────
 
@@ -161,6 +163,32 @@ function formatRetrograde(planet, data) {
   return lines.join('\n');
 }
 
+function formatRecipe(r) {
+  const lines = [`🧪 ${r.name}${r.nameEn ? ` (${r.nameEn})` : ''}`];
+  lines.push(`  Type: ${r.type}`);
+  lines.push(`  Intent: ${r.intent.join(', ')}`);
+  if (r.description) lines.push(`  ${r.description}`);
+  lines.push('');
+  lines.push('  Ingredients:');
+  for (const ing of r.ingredients) {
+    lines.push(`    🌿 ${ing.herbCn} (${ing.herb}) — ${ing.powers.join(', ')}  |  ${ing.element} / ${ing.planet}`);
+  }
+  if (r.timing) {
+    lines.push('');
+    lines.push('  Timing:');
+    if (r.timing.bestDay) lines.push(`    Best day: ${r.timing.bestDay}`);
+    if (r.timing.bestMoonPhase) lines.push(`    Best moon phase: ${r.timing.bestMoonPhase}`);
+    if (r.timing.notes) lines.push(`    ${r.timing.notes}`);
+  }
+  if (r.instructions) {
+    lines.push('');
+    lines.push(`  Instructions: ${r.instructions}`);
+  }
+  if (r.source) lines.push(`  Source: ${r.source}`);
+  if (r.tags?.length) lines.push(`  Tags: ${r.tags.join(', ')}`);
+  return lines.join('\n');
+}
+
 // ─── Sabbat date helpers ─────────────────────────────────
 
 const SABBAT_APPROX_DATES = [
@@ -206,7 +234,7 @@ function getCurrentMoonPhase(date) {
 
 const server = new McpServer({
   name: 'witch-basic',
-  version: '0.2.0',
+  version: '0.3.0',
 });
 
 // 1. lookup_herb
@@ -376,6 +404,47 @@ server.tool(
       return { content: [{ type: 'text', text: `Planet not found. Available: ${available}` }] };
     }
     return { content: [{ type: 'text', text: formatRetrograde(key, retrogrades[key]) }] };
+  }
+);
+
+// 11. lookup_recipe
+server.tool(
+  'lookup_recipe',
+  'Search magical recipes (spell jars, bowls, baths, etc.) by name, intent, or ingredient. Returns full ingredient list with correspondences, timing, and instructions.',
+  {
+    query: z.string().describe('Recipe name, intent (e.g. prosperity, protection), or ingredient name to search'),
+  },
+  async ({ query }) => {
+    const q = query.toLowerCase().trim();
+    const results = recipes.filter(r =>
+      fuzzyMatch(r.name, q) ||
+      fuzzyMatch(r.nameEn || '', q) ||
+      fuzzyMatch(r.id, q) ||
+      r.intent.some(i => fuzzyMatch(i, q)) ||
+      r.ingredients.some(ing => fuzzyMatch(ing.herb, q) || fuzzyMatch(ing.herbCn, q)) ||
+      (r.tags || []).some(t => fuzzyMatch(t, q))
+    );
+    if (!results.length) {
+      const available = recipes.map(r => `${r.name} (${r.intent.join(', ')})`).join('; ');
+      return { content: [{ type: 'text', text: `No recipes found matching "${query}".${available ? ` Available: ${available}` : ''}` }] };
+    }
+    return { content: [{ type: 'text', text: results.map(formatRecipe).join('\n\n') }] };
+  }
+);
+
+// 12. list_recipes
+server.tool(
+  'list_recipes',
+  'List all available magical recipes with their names, types, and intents.',
+  {},
+  async () => {
+    if (!recipes.length) {
+      return { content: [{ type: 'text', text: 'No recipes available yet.' }] };
+    }
+    const lines = recipes.map(r =>
+      `🧪 ${r.name}${r.nameEn ? ` (${r.nameEn})` : ''}  —  ${r.type}  |  ${r.intent.join(', ')}  |  ${r.ingredients.length} ingredients`
+    );
+    return { content: [{ type: 'text', text: lines.join('\n') }] };
   }
 );
 
