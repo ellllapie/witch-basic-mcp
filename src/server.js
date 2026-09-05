@@ -26,6 +26,7 @@ let intents = {};
 let moonInSigns = [];
 let retrogrades = {};
 let recipes = [];
+let cunninghamHerbs = {};
 
 try { herbs = loadJSON(join(VENDOR, 'botanicals.json')); } catch { console.warn('⚠ botanicals.json not found — run npm run setup'); }
 try { crystals = loadJSON(join(VENDOR, 'crystals.json')); } catch { console.warn('⚠ crystals.json not found — run npm run setup'); }
@@ -38,6 +39,7 @@ intents = loadJSON(join(DATA, 'intents.json'));
 moonInSigns = loadJSON(join(DATA, 'moon_in_signs.json'));
 retrogrades = loadJSON(join(DATA, 'retrogrades.json'));
 try { recipes = loadJSON(join(DATA, 'recipes.json')); } catch { console.warn('⚠ recipes.json not found — no recipes loaded'); }
+try { cunninghamHerbs = loadJSON(join(DATA, 'herbs.json')); console.log(`✓ herbs.json loaded: ${Object.keys(cunninghamHerbs).length} herbs`); } catch { console.warn('⚠ herbs.json not found'); }
 
 // ─── Helpers ─────────────────────────────────────────────
 
@@ -54,6 +56,20 @@ function formatHerb(h) {
   if (h.Deities) lines.push(`  Deities: ${h.Deities}`);
   if (h.Family) lines.push(`  Family: ${h.Family} / ${h.Genus || ''} ${h.Species || ''}`.trim());
   if (h.Warning) lines.push(`  ⚠️ WARNING: ${h.Warning}`);
+  return lines.join('\n');
+}
+
+function formatCunninghamHerb(key, h) {
+  const lines = [`🌿 ${key}${h.nameZh ? ` (${h.nameZh})` : ''}`];
+  if (h.scientificName) lines.push(`  Latin: ${h.scientificName}`);
+  if (h.folkNames?.length) lines.push(`  Also called: ${h.folkNames.join(', ')}`);
+  lines.push(`  Gender: ${h.gender || '—'}  |  Planet: ${h.planet || '—'}  |  Element: ${h.element || '—'}`);
+  if (h.deities?.length) lines.push(`  Deities: ${h.deities.join(', ')}`);
+  if (h.powers?.length) lines.push(`  Powers: ${h.powers.join(', ')}`);
+  if (h.toxic) lines.push(`  ⚠️ TOXIC — use with caution`);
+  if (h.ritualUses) lines.push(`  Ritual uses: ${h.ritualUses}`);
+  if (h.magicalUses) lines.push(`  Magical uses: ${h.magicalUses}`);
+  if (h.lore) lines.push(`  📖 ${h.lore}`);
   return lines.join('\n');
 }
 
@@ -234,21 +250,39 @@ function getCurrentMoonPhase(date) {
 
 const server = new McpServer({
   name: 'witch-basic',
-  version: '0.3.0',
+  version: '0.4.0',
 });
 
 // 1. lookup_herb
 server.tool(
   'lookup_herb',
-  'Search herbs/botanicals by name. Returns magical correspondences, warnings, and botanical info.',
+  'Search herbs by name, Chinese name, Latin name, or folk name. Returns magical correspondences from Cunningham\'s Encyclopedia (409 herbs) and Open Occult botanicals (~900 entries).',
   { query: z.string().describe('Herb name or partial name to search') },
   async ({ query }) => {
-    const results = herbs.filter(h =>
+    // Search vendor/botanicals.json (Open Occult)
+    const vendorResults = herbs.filter(h =>
       fuzzyMatch(h.HerbName, query) ||
       (h.AlsoCalled && fuzzyMatch(h.AlsoCalled, query))
     );
-    if (!results.length) return { content: [{ type: 'text', text: `No herbs found matching "${query}".` }] };
-    return { content: [{ type: 'text', text: results.map(formatHerb).join('\n\n') }] };
+    // Search data/herbs.json (Cunningham)
+    const cunninghamResults = Object.entries(cunninghamHerbs).filter(([key, h]) =>
+      fuzzyMatch(key, query) ||
+      (h.nameZh && fuzzyMatch(h.nameZh, query)) ||
+      (h.scientificName && fuzzyMatch(h.scientificName, query)) ||
+      (h.folkNames || []).some(n => fuzzyMatch(n, query))
+    );
+
+    const parts = [];
+    if (cunninghamResults.length) {
+      parts.push('── Cunningham\'s Encyclopedia ──');
+      parts.push(...cunninghamResults.map(([k, h]) => formatCunninghamHerb(k, h)));
+    }
+    if (vendorResults.length) {
+      parts.push('── Open Occult Botanicals ──');
+      parts.push(...vendorResults.map(formatHerb));
+    }
+    if (!parts.length) return { content: [{ type: 'text', text: `No herbs found matching "${query}".` }] };
+    return { content: [{ type: 'text', text: parts.join('\n\n') }] };
   }
 );
 
