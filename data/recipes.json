@@ -72,5 +72,70 @@
     "instructions": "",
     "source": "Ella原创配方",
     "tags": ["beginner-friendly", "kitchen-witch", "prosperity"]
+  },
+  {
+    "id": "florida-water",
+    "name": "佛罗里达水",
+    "nameEn": "Florida Water",
+    "type": "spiritual water",
+    "intent": ["purification", "protection", "healing", "love"],
+    "description": "经典灵性净化水，基础配方自由度高，可根据个人偏好调整比例或添加其他草药。酒精浸泡后过滤使用，可用于净化空间、祭坛、工具，也可加入浴水。",
+    "ingredients": [
+      {
+        "herb": "Rose",
+        "herbCn": "玫瑰",
+        "powers": ["Love", "Psychic Powers", "Healing", "Protection", "Luck"],
+        "element": "Water",
+        "planet": "Venus"
+      },
+      {
+        "herb": "Citrus Peel",
+        "herbCn": "柑橘类果皮",
+        "powers": ["Love", "Purification", "Luck", "Money"],
+        "element": "Fire",
+        "planet": "Sun",
+        "notes": "橙、柠檬、莱姆均可，混用更佳"
+      },
+      {
+        "herb": "Lavender",
+        "herbCn": "薰衣草",
+        "powers": ["Love", "Protection", "Sleep", "Purification", "Peace", "Happiness"],
+        "element": "Air",
+        "planet": "Mercury"
+      },
+      {
+        "herb": "Rosemary",
+        "herbCn": "迷迭香",
+        "powers": ["Protection", "Love", "Purification", "Healing", "Mental Powers"],
+        "element": "Fire",
+        "planet": "Sun"
+      },
+      {
+        "herb": "Cinnamon",
+        "herbCn": "肉桂",
+        "powers": ["Spirituality", "Success", "Healing", "Protection", "Love"],
+        "element": "Fire",
+        "planet": "Sun"
+      },
+      {
+        "herb": "Mint",
+        "herbCn": "薄荷",
+        "powers": ["Money", "Healing", "Exorcism", "Protection", "Travel"],
+        "element": "Air",
+        "planet": "Mercury"
+      }
+    ],
+    "base": {
+      "liquid": "高浓度酒精（伏特加或药用酒精）",
+      "method": "草药放入玻璃瓶，酒精填满浸泡，至少两周后过滤"
+    },
+    "timing": {
+      "bestDay": "Monday",
+      "bestMoonPhase": "Full Moon",
+      "notes": "月亮日主净化和灵性；满月能量最强，适合制作灵性用水"
+    },
+    "instructions": "将所有草药和果皮放入干净的玻璃瓶中，倒入酒精至完全覆盖。密封后放置阴凉处，每隔几天轻轻摇晃。至少浸泡两周，过滤后装瓶使用。",
+    "source": "传统配方 / Ella整理",
+    "tags": ["traditional", "spiritual-water", "purification", "versatile"]
   }
 ]
